@@ -7,21 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="output" HorizontalAlignment="Left" VerticalAlignment="Top" Width="310" Height="50" Margin="200, 95, 0, 0" TextAlignment="Right" FontSize="18"></TextBox>
-        <Button Name="b1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="200, 150, 0, 0" Click="b1_click"/>
-        <Button Name="b2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="305, 150, 0, 0" Click="b2_click"></Button>
-        <Button Name="b3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="410, 150, 0, 0" Click="b3_click"></Button>
-        <Button Name="b4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="200, 205, 0, 0" Click="b4_click"></Button>
-        <Button Name="b5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="305, 205, 0, 0" Click="b5_click"></Button>
-        <Button Name="b6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="410, 205, 0, 0" Click="b6_click"></Button>
-        <Button Name="b7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="200, 260, 0, 0" Click="b7_click"></Button>
-        <Button Name="b8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="305, 260, 0, 0" Click="b8_click"></Button>
-        <Button Name="b9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="410, 260, 0, 0" Click="b9_click"></Button>
-        <Button Name="b0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="310" Height="50" Margin="200, 315, 0, 0" Click="b0_click"></Button>
-        <Button Name="bAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="515, 150, 0, 0" Click="bAdd_click"></Button>
-        <Button Name="bTake" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="515, 205, 0, 0" Click="bTake_click"></Button>
-        <Button Name="bMult" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="515, 260, 0, 0" Click="bMult_click"></Button>
-        <Button Name="bDiv" Content="\" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="515, 315, 0, 0" Click="bDiv_click"></Button>
-        <Button Name="bEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="515, 95, 0, 0" Click="bEqual_click"></Button>
+        <TextBox Name="output" HorizontalAlignment="Left" VerticalAlignment="Top" Width="310" Height="50" Margin="35,35,0,0" TextAlignment="Right" FontSize="36"></TextBox>
+        <Button Name="b1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="35,90,0,0" Click="b1_click"/>
+        <Button Name="b2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="140,90,0,0" Click="b2_click"></Button>
+        <Button Name="b3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="245,90,0,0" Click="b3_click"></Button>
+        <Button Name="b4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="35,145,0,0" Click="b4_click"></Button>
+        <Button Name="b5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="140,145,0,0" Click="b5_click"></Button>
+        <Button Name="b6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="245,145,0,0" Click="b6_click"></Button>
+        <Button Name="b7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="35,200,0,0" Click="b7_click"></Button>
+        <Button Name="b8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="140,200,0,0" Click="b8_click"></Button>
+        <Button Name="b9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="245,200,0,0" Click="b9_click"></Button>
+        <Button Name="b0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="205" Height="50" Margin="35,255,0,0" Click="b0_click"></Button>
+        <Button x:Name="bDecimal" Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="245,255,0,0" Click="bDecimal_click"/>
+        <Button Name="bAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="350,90,0,0" Click="bAdd_click"></Button>
+        <Button Name="bTake" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="350,145,0,0" Click="bTake_click"></Button>
+        <Button Name="bMult" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="350,200,0,0" Click="bMult_click"></Button>
+        <Button Name="bDiv" Content="\" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="350,255,0,0" Click="bDiv_click"></Button>
+        <Button Name="bEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="350,35,0,0" Click="bEqual_click"></Button>
+        <GroupBox Name="settings" Visibility="Visible">
+            <Grid>
+                <ListBox Name="listOperations" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="270" Margin="415,35,0,0" FontSize="20"></ListBox>
+                <CheckBox Name="writeOperations" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="575,35,0,0" Content="Записывать операции" Checked="checkWrite"></CheckBox>
+                <Button Name="clearOperations" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="45" Margin="575,60,0,0" Content="C" ToolTip="Очищает весь список операций" Click="c_click"></Button>
+                <Button Name="clearLast" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="45" Margin="575,90,0,0" Content="C last" ToolTip="Удаляет последнюю операцию из списка" Click="clast_click"></Button>
+            </Grid>
+        </GroupBox>
+        <RadioButton x:Name="showSettings" GroupName="showHide" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35, 320, 0, 0" Content="Показать дополнительные настройки" Checked="checkShow"></RadioButton>
+        <RadioButton x:Name="hideSettings" GroupName="showHide" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35, 340, 0, 0" Content="Скрыть дополнительные настройки" Checked="checkShow" IsChecked="True"></RadioButton>
     </Grid>
 </Window>
